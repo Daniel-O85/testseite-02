@@ -1,0 +1,133 @@
+
+/*********** Style CSS ****x*****/
+
+/******* Body ********/
+body{
+    background-color: lightyellow;
+}
+
+/******* Kopfzeile ********/
+header ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+    list-style-type:none;
+}
+
+header ol li {
+    padding: 10px;
+}
+header ol a{
+    color: orangered;
+    font-size: 25px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+header .suchfeld {
+    width: 100%;
+    text-align: center;
+}
+
+header .suchfeld .suche {
+    text-align: left;
+    border: none;
+    padding: 6px;
+    width: 400px;
+    background-color: rgba(223, 81, 81, 0.34);
+    border-radius: 15px;
+}
+header .suchfeld .suche::placeholder{
+    color: orangered;
+    text-shadow: 1px 1px 1px black;
+}
+
+/******* Hauptinhalt mit 2 Spalten *******/
+main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 15px;
+}
+main .div1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: darkkhaki;
+    grid-column-start: 2;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 3px 10px black;
+}
+main .div2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: skyblue;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 3px 10px black;
+
+}
+main .div3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: lightsalmon;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 3px 10px black;
+
+}
+main .div1 p,
+main .div2 p, 
+main .div3 p{
+    max-height: 120px;
+    overflow: auto;
+    font-size: 20px;
+    padding: 15px;
+}
+main .div1 p b,
+main .div2 p b, 
+main .div3 p b{
+    font-size: 30px;
+}
+main .div1 p::-webkit-scrollbar,
+main .div2 p::-webkit-scrollbar,
+main .div3 p::-webkit-scrollbar{
+    display: none;
+  }
+
+  main .div1 .text,  main .div2 .text,  main .div3 .text{
+    width: 500px;
+  }
+
+/******* Bildbreite festgelegt *******/
+main div img{
+    width: 200px;
+    padding: 15px;
+}
+
+/******** Fußzeile ********/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+footer table{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px;
+    background-color: aqua;
+    border-radius: 20px;
+    box-shadow: 5px 3px 10px black;
+}
